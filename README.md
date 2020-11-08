@@ -16,7 +16,7 @@ Just because I think it is nicer to write:
 
 ```py
 Runner('git')\
-    .arg('commit')
+    .arg('commit')\
     .arg('-m', '"message"')\
     .run(check=True)
 ```
