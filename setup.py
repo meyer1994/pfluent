@@ -7,7 +7,7 @@ setup(
     url='https://github.com/meyer1994/pfluent',
     download_url='https://github.com/meyer1994/pfluent/archive/v0.0.1.tar.gz',
     author='João Vicente Meyer',
-    license='GPL-3.0',
+    license='Unlicense',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
