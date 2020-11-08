@@ -24,5 +24,6 @@ deploy:
   edge: true
   provider: pypi
   username: meyer1994
+  skip_existing: true
   on:
     tags: true
