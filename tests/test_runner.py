@@ -1,7 +1,7 @@
 from unittest import TestCase
 from unittest.mock import patch
 
-from pfluid import Runner
+from pfluent import Runner
 
 
 class TestRunner(TestCase):
@@ -23,13 +23,13 @@ class TestRunner(TestCase):
             .env(KEY='key')
         self.assertDictEqual(runner._env, {'KEY': 'key'})
 
-    @patch('pfluid.subprocess.run')
+    @patch('pfluent.subprocess.run')
     def test_run(self, run):
         """ Runs process """
         Runner('ls').run(check=True)
         run.assert_called_once_with(['ls'], env=None, check=True)
 
-    @patch('pfluid.subprocess.Popen')
+    @patch('pfluent.subprocess.Popen')
     def test_open(self, Popen):
         """ Opens process """
         Runner('ls').popen(bufsize=0)
