@@ -26,11 +26,11 @@ class TestRunner(TestCase):
     @patch('pfluid.subprocess.run')
     def test_run(self, run):
         """ Runs process """
-        runner = Runner('ls').run(check=True)
+        Runner('ls').run(check=True)
         run.assert_called_once_with(['ls'], env=None, check=True)
 
     @patch('pfluid.subprocess.Popen')
     def test_open(self, Popen):
         """ Opens process """
-        runner = Runner('ls').popen(bufsize=0)
+        Runner('ls').popen(bufsize=0)
         Popen.assert_called_once_with(['ls'], env=None, bufsize=0)
