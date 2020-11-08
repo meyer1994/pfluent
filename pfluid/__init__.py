@@ -20,9 +20,8 @@ class Runner(object):
         return self
 
     def env(self, **kwargs: dict) -> 'Runner':
+        self._env = self._env or {}
         kwargs = {k: str(v) for k, v in kwargs.items()}
-        if self._env is None:
-            self._env = {}
         self._env.update(kwargs)
         return self
 
