@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/meyer1994/pfluent.svg?branch=master)](https://travis-ci.com/meyer1994/pfluent)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-Thin wrapper around `subprocess` to use [fluent] syntax.
+Thin wrapper around `subprocess` to use [fluent][1] syntax.
 
 ## Table of Contents
 
