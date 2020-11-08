@@ -5,7 +5,7 @@ setup(
     version='0.0.1',
     description='Thin wrapper around subprocess to make use of fluent syntax',
     url='https://github.com/meyer1994/pfluent',
-    download_url='https://github.com/meyer1994/pfluent/archive/v0.0.1.tar.gz',
+    download_url='https://github.com/meyer1994/pfluent/archive/0.0.1.tar.gz',
     author='João Vicente Meyer',
     license='Unlicense',
     classifiers=[
